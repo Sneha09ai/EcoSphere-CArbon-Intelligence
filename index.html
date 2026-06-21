@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoSphere Carbon Intelligence</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+<div class="container">
+
+    <h1>🌱 EcoSphere Carbon Intelligence Platform</h1>
+    <p class="subtitle">
+        Analyze your environmental footprint and discover ways to reduce it.
+    </p>
+
+    <div class="card">
+
+        <label>Monthly Electricity Usage (kWh)</label>
+        <input type="number" id="electricity">
+
+        <label>Weekly Travel Distance (km)</label>
+        <input type="number" id="travel">
+
+        <label>Weekly Waste Generated (kg)</label>
+        <input type="number" id="waste">
+
+        <label>Diet Type</label>
+        <select id="diet">
+            <option value="800">Vegan</option>
+            <option value="1500">Average</option>
+            <option value="2500">Heavy Meat</option>
+        </select>
+
+        <button onclick="calculateFootprint()">
+            Calculate Carbon Footprint
+        </button>
+
+    </div>
+
+    <div class="results">
+
+        <h2 id="totalFootprint">
+            Your Carbon Footprint: --
+        </h2>
+
+        <div id="historyBox"></div>
+
+        <div id="recommendationBox"></div>
+
+        <canvas id="footprintChart"></canvas>
+
+        <div class="simulator">
+
+            <h3>🌍 Carbon Reduction Simulator</h3>
+
+            <button onclick="simulateReduction()">
+                Simulate Eco Actions
+            </button>
+
+            <p id="simulationResult"></p>
+
+        </div>
+
+        <div class="education">
+
+            <h3>📘 What is a Carbon Footprint?</h3>
+
+            <p>
+                A carbon footprint measures greenhouse gas emissions
+                produced through daily activities such as transport,
+                electricity usage, food consumption and waste generation.
+            </p>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

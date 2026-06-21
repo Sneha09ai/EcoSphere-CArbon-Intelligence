@@ -1,0 +1,117 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Segoe UI, sans-serif;
+}
+
+body{
+    background:#0f172a;
+    color:white;
+    min-height:100vh;
+    padding:30px;
+}
+
+.container{
+    max-width:1000px;
+    margin:auto;
+}
+
+h1{
+    text-align:center;
+    color:#10b981;
+    margin-bottom:10px;
+}
+
+.subtitle{
+    text-align:center;
+    color:#cbd5e1;
+    margin-bottom:30px;
+}
+
+.card{
+    background:#1e293b;
+    padding:25px;
+    border-radius:15px;
+    margin-bottom:25px;
+}
+
+label{
+    display:block;
+    margin-top:15px;
+    margin-bottom:5px;
+    font-weight:bold;
+}
+
+input,
+select{
+    width:100%;
+    padding:12px;
+    border:none;
+    border-radius:8px;
+    background:#334155;
+    color:white;
+}
+
+button{
+    width:100%;
+    margin-top:20px;
+    padding:14px;
+    border:none;
+    border-radius:10px;
+    background:#10b981;
+    color:white;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#059669;
+}
+
+.results{
+    background:#1e293b;
+    padding:25px;
+    border-radius:15px;
+}
+
+#totalFootprint{
+    text-align:center;
+    color:#10b981;
+    margin-bottom:20px;
+}
+
+#historyBox,
+#recommendationBox{
+    background:#334155;
+    padding:15px;
+    border-radius:10px;
+    margin-bottom:20px;
+}
+
+canvas{
+    background:white;
+    border-radius:10px;
+    padding:10px;
+    margin-top:20px;
+}
+
+.simulator{
+    margin-top:25px;
+    background:#334155;
+    padding:15px;
+    border-radius:10px;
+}
+
+.education{
+    margin-top:25px;
+    background:#334155;
+    padding:15px;
+    border-radius:10px;
+}
+
+.education h3,
+.simulator h3{
+    color:#10b981;
+    margin-bottom:10px;
+}
